@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	bool isMarried, hasChildren, shouldShootMyself;
+	cout << "Are you married?\n";
+	cout << "Enter 1 if you are, otherwise enter 0: ";
+	cin >> isMarried;
+	cout << "Do you have any children?\n";
+	cout << "Enter 1 if you do, otherwise enter 0: ";
+	cin >> hasChildren;
+	shouldShootMyself = (isMarried xor hasChildren);
+	cout << "Output a 1 if I should shoot myself, otherwise output a 0: ";
+	cout << shouldShootMyself;
+
+}
