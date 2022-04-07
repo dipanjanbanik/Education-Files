@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9f1ef808933249bc822afa4bf40f82fa" Name="Diagram1">
+        <EntityTypeShape EntityType="PAModel.ProductDetail" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="PAModel.ProductInfo" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PAModel.TransactionDetail" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="PAModel.TransactionInfo" Width="1.5" PointX="7.5" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PAModel.User" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PAModel.UserInfo" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <AssociationConnector Association="PAModel.FK_ProductInfo_ProductDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="PAModel.FK_TransactionDetail_ProductInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="PAModel.FK_TransactionInfo_TransactionDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="PAModel.FK_User_UserInfo" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="PAModel.Entity1" Width="1.5" PointX="4.75" PointY="4.125" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
