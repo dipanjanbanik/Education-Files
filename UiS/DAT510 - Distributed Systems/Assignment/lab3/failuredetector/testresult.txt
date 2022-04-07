@@ -1,0 +1,181 @@
+to:  map[]
+to:  map[0:true]
+to:  map[1:true]
+to:  map[1:true]
+to:  map[]
+to:  map[]
+to:  map[0:true 1:true 2:true]
+to:  map[0:true 1:true 2:true]
+--- FAIL: TestTimeoutProcedure (0.00s)
+    fd_test.go:183: TestTimeoutProcedure 0: Alive set should always be empty after timeout procedure completes, has length 3
+    fd_test.go:225: TestTimeoutProcedure 0: expected and actual set of outgoing heartbeat requests differ
+    fd_test_helpers.go:105: -----------------------------------------------------------------------------
+    fd_test_helpers.go:106: Expected and actual set of outgoing heartbeats differ
+    fd_test_helpers.go:107: Got:
+    fd_test_helpers.go:109: None
+    fd_test_helpers.go:114: Want:
+    fd_test_helpers.go:119: Heartbeat request from 2 to 2
+    fd_test_helpers.go:119: Heartbeat request from 2 to 1
+    fd_test_helpers.go:119: Heartbeat request from 2 to 0
+    fd_test_helpers.go:121: -----------------------------------------------------------------------------
+    fd_test.go:183: TestTimeoutProcedure 1: Alive set should always be empty after timeout procedure completes, has length 3
+    fd_test.go:187: TestTimeoutProcedure 1: suspected set post timeout procedure differs
+    fd_test_helpers.go:27: -----------------------------------------------------------------------------
+    fd_test_helpers.go:28: Got:
+    fd_test_helpers.go:33: suspect 0
+    fd_test_helpers.go:35: Want:
+    fd_test_helpers.go:37: None
+    fd_test_helpers.go:42: -----------------------------------------------------------------------------
+    fd_test.go:193: TestTimeoutProcedure 1: want 2s delay after timeout procedure, got 1s
+    fd_test.go:204: TestTimeoutProcedure 1: expected and actual set of restore indications differ
+    fd_test_helpers.go:46: -----------------------------------------------------------------------------
+    fd_test_helpers.go:47: Got:
+    fd_test_helpers.go:49: None
+    fd_test_helpers.go:54: Want:
+    fd_test_helpers.go:59: restore 0
+    fd_test_helpers.go:61: -----------------------------------------------------------------------------
+    fd_test.go:225: TestTimeoutProcedure 1: expected and actual set of outgoing heartbeat requests differ
+    fd_test_helpers.go:105: -----------------------------------------------------------------------------
+    fd_test_helpers.go:106: Expected and actual set of outgoing heartbeats differ
+    fd_test_helpers.go:107: Got:
+    fd_test_helpers.go:109: None
+    fd_test_helpers.go:114: Want:
+    fd_test_helpers.go:119: Heartbeat request from 2 to 2
+    fd_test_helpers.go:119: Heartbeat request from 2 to 1
+    fd_test_helpers.go:119: Heartbeat request from 2 to 0
+    fd_test_helpers.go:121: -----------------------------------------------------------------------------
+    fd_test.go:183: TestTimeoutProcedure 2: Alive set should always be empty after timeout procedure completes, has length 2
+    fd_test.go:225: TestTimeoutProcedure 2: expected and actual set of outgoing heartbeat requests differ
+    fd_test_helpers.go:105: -----------------------------------------------------------------------------
+    fd_test_helpers.go:106: Expected and actual set of outgoing heartbeats differ
+    fd_test_helpers.go:107: Got:
+    fd_test_helpers.go:109: None
+    fd_test_helpers.go:114: Want:
+    fd_test_helpers.go:119: Heartbeat request from 2 to 2
+    fd_test_helpers.go:119: Heartbeat request from 2 to 1
+    fd_test_helpers.go:119: Heartbeat request from 2 to 0
+    fd_test_helpers.go:121: -----------------------------------------------------------------------------
+    fd_test.go:183: TestTimeoutProcedure 3: Alive set should always be empty after timeout procedure completes, has length 3
+    fd_test.go:187: TestTimeoutProcedure 3: suspected set post timeout procedure differs
+    fd_test_helpers.go:27: -----------------------------------------------------------------------------
+    fd_test_helpers.go:28: Got:
+    fd_test_helpers.go:33: suspect 1
+    fd_test_helpers.go:35: Want:
+    fd_test_helpers.go:37: None
+    fd_test_helpers.go:42: -----------------------------------------------------------------------------
+    fd_test.go:193: TestTimeoutProcedure 3: want 2s delay after timeout procedure, got 1s
+    fd_test.go:204: TestTimeoutProcedure 3: expected and actual set of restore indications differ
+    fd_test_helpers.go:46: -----------------------------------------------------------------------------
+    fd_test_helpers.go:47: Got:
+    fd_test_helpers.go:49: None
+    fd_test_helpers.go:54: Want:
+    fd_test_helpers.go:59: restore 1
+    fd_test_helpers.go:61: -----------------------------------------------------------------------------
+    fd_test.go:225: TestTimeoutProcedure 3: expected and actual set of outgoing heartbeat requests differ
+    fd_test_helpers.go:105: -----------------------------------------------------------------------------
+    fd_test_helpers.go:106: Expected and actual set of outgoing heartbeats differ
+    fd_test_helpers.go:107: Got:
+    fd_test_helpers.go:109: None
+    fd_test_helpers.go:114: Want:
+    fd_test_helpers.go:119: Heartbeat request from 2 to 0
+    fd_test_helpers.go:119: Heartbeat request from 2 to 2
+    fd_test_helpers.go:119: Heartbeat request from 2 to 1
+    fd_test_helpers.go:121: -----------------------------------------------------------------------------
+    fd_test.go:187: TestTimeoutProcedure 4: suspected set post timeout procedure differs
+    fd_test_helpers.go:27: -----------------------------------------------------------------------------
+    fd_test_helpers.go:28: Got:
+    fd_test_helpers.go:30: None
+    fd_test_helpers.go:35: Want:
+    fd_test_helpers.go:40: suspect 2
+    fd_test_helpers.go:40: suspect 1
+    fd_test_helpers.go:40: suspect 0
+    fd_test_helpers.go:42: -----------------------------------------------------------------------------
+    fd_test.go:198: TestTimeoutProcedure 4: expected and actual set of suspect indications differ
+    fd_test_helpers.go:46: -----------------------------------------------------------------------------
+    fd_test_helpers.go:47: Got:
+    fd_test_helpers.go:49: None
+    fd_test_helpers.go:54: Want:
+    fd_test_helpers.go:59: suspect 2
+    fd_test_helpers.go:59: suspect 1
+    fd_test_helpers.go:59: suspect 0
+    fd_test_helpers.go:61: -----------------------------------------------------------------------------
+    fd_test.go:225: TestTimeoutProcedure 4: expected and actual set of outgoing heartbeat requests differ
+    fd_test_helpers.go:105: -----------------------------------------------------------------------------
+    fd_test_helpers.go:106: Expected and actual set of outgoing heartbeats differ
+    fd_test_helpers.go:107: Got:
+    fd_test_helpers.go:109: None
+    fd_test_helpers.go:114: Want:
+    fd_test_helpers.go:119: Heartbeat request from 2 to 2
+    fd_test_helpers.go:119: Heartbeat request from 2 to 1
+    fd_test_helpers.go:119: Heartbeat request from 2 to 0
+    fd_test_helpers.go:121: -----------------------------------------------------------------------------
+    fd_test.go:183: TestTimeoutProcedure 5: Alive set should always be empty after timeout procedure completes, has length 1
+    fd_test.go:187: TestTimeoutProcedure 5: suspected set post timeout procedure differs
+    fd_test_helpers.go:27: -----------------------------------------------------------------------------
+    fd_test_helpers.go:28: Got:
+    fd_test_helpers.go:30: None
+    fd_test_helpers.go:35: Want:
+    fd_test_helpers.go:40: suspect 1
+    fd_test_helpers.go:40: suspect 0
+    fd_test_helpers.go:42: -----------------------------------------------------------------------------
+    fd_test.go:198: TestTimeoutProcedure 5: expected and actual set of suspect indications differ
+    fd_test_helpers.go:46: -----------------------------------------------------------------------------
+    fd_test_helpers.go:47: Got:
+    fd_test_helpers.go:49: None
+    fd_test_helpers.go:54: Want:
+    fd_test_helpers.go:59: suspect 1
+    fd_test_helpers.go:59: suspect 0
+    fd_test_helpers.go:61: -----------------------------------------------------------------------------
+    fd_test.go:225: TestTimeoutProcedure 5: expected and actual set of outgoing heartbeat requests differ
+    fd_test_helpers.go:105: -----------------------------------------------------------------------------
+    fd_test_helpers.go:106: Expected and actual set of outgoing heartbeats differ
+    fd_test_helpers.go:107: Got:
+    fd_test_helpers.go:109: None
+    fd_test_helpers.go:114: Want:
+    fd_test_helpers.go:119: Heartbeat request from 2 to 2
+    fd_test_helpers.go:119: Heartbeat request from 2 to 1
+    fd_test_helpers.go:119: Heartbeat request from 2 to 0
+    fd_test_helpers.go:121: -----------------------------------------------------------------------------
+    fd_test.go:183: TestTimeoutProcedure 6: Alive set should always be empty after timeout procedure completes, has length 3
+    fd_test.go:187: TestTimeoutProcedure 6: suspected set post timeout procedure differs
+    fd_test_helpers.go:27: -----------------------------------------------------------------------------
+    fd_test_helpers.go:28: Got:
+    fd_test_helpers.go:33: suspect 2
+    fd_test_helpers.go:33: suspect 1
+    fd_test_helpers.go:33: suspect 0
+    fd_test_helpers.go:35: Want:
+    fd_test_helpers.go:37: None
+    fd_test_helpers.go:42: -----------------------------------------------------------------------------
+    fd_test.go:193: TestTimeoutProcedure 6: want 2s delay after timeout procedure, got 1s
+    fd_test.go:204: TestTimeoutProcedure 6: expected and actual set of restore indications differ
+    fd_test_helpers.go:46: -----------------------------------------------------------------------------
+    fd_test_helpers.go:47: Got:
+    fd_test_helpers.go:49: None
+    fd_test_helpers.go:54: Want:
+    fd_test_helpers.go:59: restore 2
+    fd_test_helpers.go:59: restore 1
+    fd_test_helpers.go:59: restore 0
+    fd_test_helpers.go:61: -----------------------------------------------------------------------------
+    fd_test.go:225: TestTimeoutProcedure 6: expected and actual set of outgoing heartbeat requests differ
+    fd_test_helpers.go:105: -----------------------------------------------------------------------------
+    fd_test_helpers.go:106: Expected and actual set of outgoing heartbeats differ
+    fd_test_helpers.go:107: Got:
+    fd_test_helpers.go:109: None
+    fd_test_helpers.go:114: Want:
+    fd_test_helpers.go:119: Heartbeat request from 2 to 2
+    fd_test_helpers.go:119: Heartbeat request from 2 to 1
+    fd_test_helpers.go:119: Heartbeat request from 2 to 0
+    fd_test_helpers.go:121: -----------------------------------------------------------------------------
+    fd_test.go:225: TestTimeoutProcedure 7: expected and actual set of outgoing heartbeat requests differ
+    fd_test_helpers.go:105: -----------------------------------------------------------------------------
+    fd_test_helpers.go:106: Expected and actual set of outgoing heartbeats differ
+    fd_test_helpers.go:107: Got:
+    fd_test_helpers.go:109: None
+    fd_test_helpers.go:114: Want:
+    fd_test_helpers.go:119: Heartbeat request from 2 to 2
+    fd_test_helpers.go:119: Heartbeat request from 2 to 1
+    fd_test_helpers.go:119: Heartbeat request from 2 to 0
+    fd_test_helpers.go:121: -----------------------------------------------------------------------------
+FAIL
+exit status 1
+FAIL	dat520/lab3/failuredetector	0.007s
