@@ -1,5 +1,5 @@
 # Data-intensive System
-## Project_mrjob_decision_tree
+## technology - mrjob, decision tree, hadoop, spark, pyspark
 ### Project Description
 The main project aims to compare the performance between python, Hadoop, and Spark when processing large datasets.
 During the project, the core functionalities of the decision tree are from the following website [Decision Tree from Scratch](https://github.com/SebastianMantey/Decision-Tree-from-Scratch)
